@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row justify-content-center m-3 ">
+    <div class="col-md-6 bg-light p-5 shadow-sm">
+
+      <p><%=@flats.name%></p>
+      <p><%=@flats.address%></p>
+        <p class="mb-0">
+              <i class="fa-solid fa-user-group"></i> <%= @flats.number_of_guests %> guests
+              &nbsp;&nbsp;
+              <i class="fa-solid fa-dollar-sign"></i> <%= @flats.price_per_night %> per night
+            </p>
+      &nbsp;&nbsp;
+      <p><%=@flats.description%></p>
+      <br>
+      <%= link_to "Back home", flats_path, class: "btn btn-outline-primary" %>
+    </div>
+
+  </div>
+</div>
+<div class="row justify-content-center m-3 ">
+  <%= image_tag "original.jpeg", style:"max-width: 650px;" %>
+</div>
