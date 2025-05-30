@@ -13,8 +13,11 @@
 
   <body>
     <nav class="navbar navbar-light bg-light p-3">
-  Simple Airbnb
+  <%= link_to "Simple Airbnb", flats_path, class: "text-decoration-none text-dark fw-bold"%>
 </nav>
     <%= yield %>
   </body>
+<footer class="text-center mt-4">
+  <p class="small text-muted mb-0">Mandy ❤️ </p>
+</footer>
 </html>
